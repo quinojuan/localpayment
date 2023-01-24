@@ -3,11 +3,27 @@
     src: url("./fonts/Montserrat-Regular.otf");
 }
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 7px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 label {
     color: white;
 }
 body {
-    margin: 0;
+    margin: 20px;
     font-family: myFont;
     color: #94b0d4;
 }
@@ -48,4 +64,15 @@ img {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+.countries-span {
+    padding: 7px 12px;
+    border-radius: 12px;
+    color: #7a7a7a;
+}
+
+.countries-span:hover {
+    background-color: #1d2f62;
+    color: white;
 }
